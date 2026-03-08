@@ -1,6 +1,10 @@
 # Vulnerability Assessment Lab using Nessus Essentials
 Vulnerability Management With Nessus
 
+I set up this lab to get real hands-on experience with vulnerability scanning. Reading about it is one thing — actually running scans, looking at the results, and tracing findings back to misconfigurations is a completely different experience.
+
+The core idea was to run the same target through two scans under different conditions, and see how much the results change. Spoiler: they change a lot.
+
 ## 1. Project Overview
 
 This project demonstrates a **basic vulnerability assessment** performed on a Windows machine using Nessus.
@@ -150,12 +154,13 @@ ICMP timestamp responses can be restricted using firewall rules or network confi
 
 # 7. Key Learning Outcomes
 
-This lab helped demonstrate several important concepts in vulnerability management:
 
-* Difference between **credentialed and non-credentialed scans**
-* Identifying **system misconfigurations**
-* Understanding vulnerability **risk levels and CVSS scores**
-* Applying **basic remediation techniques**
+A few things that clicked doing this that didn't fully make sense just reading about them:
+
+- The credentialed vs. non-credentialed gap is bigger than you'd expect — it's not a minor difference
+- Misconfigurations like SMB signing are often more immediately exploitable than missing patches
+- CVSS scores give you a starting point, but context determines what actually needs fixing first
+- Remediation for common findings is usually simpler than it sounds
 
 ---
 
